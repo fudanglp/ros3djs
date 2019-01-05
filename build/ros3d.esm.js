@@ -56039,6 +56039,9 @@ var PointCloud2 = (function (superclass) {
           this$1.points.colors.array[3*i + 2] = color.b;
       }
     }
+    if(this.points.rootObject){
+      this.points.rootObject.remove(this.points.sn);
+    }
     this.points.update(n);
   };
 
