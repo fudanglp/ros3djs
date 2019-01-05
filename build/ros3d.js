@@ -56185,9 +56185,6 @@ class PointCloud2 extends THREE$2.Object3D {
           this.points.colors.array[3*i + 2] = color.b;
       }
     }
-    if(this.points.rootObject){
-      this.points.rootObject.remove(this.points.sn);
-    }
     this.points.update(n);
   };
 }
